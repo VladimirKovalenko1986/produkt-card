@@ -1,28 +1,51 @@
-.example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: #fff;
-  color: #2f2f37;
-  max-width: 960px;
-  padding: 16px;
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.example code {
-  font-family: monospace;
-  font-size: 16px;
-  font-weight: 700;
-  background-color: #ff6b0a;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 2px;
+.list {
+  margin-top: 50px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.example .background {
-  height: 240px;
-  // ❗️❗️❗️ The path to images from a SASS file
-  // is always the same as from the css folder.
-  background-image: url('../images/logo.png');
-  background-size: cover;
-  background-position: center;
+.list-item {
+  box-sizing: border-box; /* Додано для врахування padding та border у загальній ширині */
+  width: calc(25% - 20px); /* Ширина картки, враховуючи відступи між ними */
+  padding: 5px;
+  margin: 0 10px 10px 0; /* Відступи між картками */
+  text-align: center;
+  list-style-type: none;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.list-img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.list-title {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.list-text {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.modal {
+  width: 500px;
+  background-color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.modal-img {
+  width: 300px;
 }
